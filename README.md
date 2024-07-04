@@ -29,6 +29,12 @@ ROW FORAMT DELIMITED 表示 文件中的每个字段按照特定分割符进行�
 FIELDS TERMINATED BY '\t' 字段以制表符分隔 通常是处理txt文件
 ROW FORAMT DELIMITED FIELDS TERMINATED BY '\t' 表示 这个Hive表的行格式是分隔符格式的，并且字段之间是由制表符分隔的
 
+lateral view 炸裂函数，可以将一个数组分割成多行
+LATERAL VIEW 允许你在一个查询中，对于每一行输入数据，生成多行输出数据
+explode 是一个表生成函数（TGF），用于将数组或映射（map）列中的元素转换为一行行的形式 
+explode(cates) 会将cates数组中的每个元素转换为一行
+LATERAL VIEW explode(cates) tmp AS cate 的意思是：对于原始表中的每一行，将cates数组列中的每个元素都转换为一行，并将这些元素的值放在名为cate的新列中。然后，你可以像引用普通表一样引用这个tmp临时表
+
 
 
 
