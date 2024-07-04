@@ -34,6 +34,12 @@ LATERAL VIEW 允许你在一个查询中，对于每一行输入数据，生成�
 explode 是一个表生成函数（TGF），用于将数组或映射（map）列中的元素转换为一行行的形式 
 explode(cates) 会将cates数组中的每个元素转换为一行
 LATERAL VIEW explode(cates) tmp AS cate 的意思是：对于原始表中的每一行，将cates数组列中的每个元素都转换为一行，并将这些元素的值放在名为cate的新列中。然后，你可以像引用普通表一样引用这个tmp临时表
+![image](https://github.com/zhangweifen/-/assets/45863647/89db5650-2be2-4ec4-8ce9-9d4fa00ec94d)
+![image](https://github.com/zhangweifen/-/assets/45863647/a7fe0c25-e908-496d-ab27-788e38aef73d)
+
+累加函数！分组累加，可以sum avg
+ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW 定义的窗口范围是从结果集的开始位置到当前行，即包含当前行及其之前的所有行
+
 
 
 
