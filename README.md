@@ -41,8 +41,6 @@ LATERAL VIEW explode(cates) tmp AS cate 的意思是：对于原始表中的每�
 ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW 定义的窗口范围是从结果集的开始位置到当前行，即包含当前行及其之前的所有行
 
 
-![1](https://github.com/zhangweifen/-/assets/45863647/b2168bc2-b630-43da-adbc-44a20c5da677)
-
 
 
 
